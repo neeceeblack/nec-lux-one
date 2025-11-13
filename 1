@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Necessary Luxuries</title>
+
+<style>
+    body { 
+        margin:0; 
+        font-family: "Helvetica Neue", Arial, sans-serif; 
+        background:#ffffff;
+        color:#111;
+        line-height:1.6;
+    }
+
+    header {
+        padding:20px 40px;
+        background:white;
+        border-bottom:1px solid #eee;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        position:sticky;
+        top:0;
+        z-index:1000;
+    }
+
+    nav a {
+        margin-left:20px;
+        text-decoration:none;
+        color:#222;
+        font-weight:500;
+    }
+
+    .hero {
+        padding:120px 40px;
+        text-align:center;
+        background:#f6f8ff;
+    }
+
+    .hero h1 { 
+        font-size:48px; 
+        margin:0 0 20px 0; 
+        font-weight:600;
+    }
+
+    .hero p { 
+        max-width:600px;
+        margin:0 auto 30px auto;
+        font-size:20px;
+    }
+
+    .btn {
+        padding:14px 28px;
+        background:#111;
+        color:white;
+        text-decoration:none;
+        border-radius:4px;
+        margin:8px;
+        display:inline-block;
+    }
+
+    section {
+        padding:80px 40px;
+        max-width:1100px;
+        margin:auto;
+    }
+
+    h2 {
+        font-size:34px;
+        margin-bottom:20px;
+        text-align:center;
+    }
+
+    .grid {
+        display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+        gap:30px;
+        margin-top:40px;
+    }
+
+    .card {
+        background:white;
+        border:1px solid #eee;
+        border-radius:6px;
+        padding:25px;
+        text-align:center;
+    }
+
+    .footer {
+        padding:40px;
+        text-align:center;
+        background:#fafafa;
+        border-top:1px solid #eee;
+        margin-top:80px;
+        font-size:14px;
+    }
+
+    /* MOBILE */
+    @media(max-width:600px){
+        .hero h1 { font-size:32px; }
+        .hero p { font-size:18px; }
+        header { flex-direction:column; }
+        nav { margin-top:10px; }
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <div style="font-size:20px; font-weight:600;">Necessary Luxuries</div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#shop">Shop</a>
+        <a href="#inlight">InLight</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>Simple pleasures, beautifully made.</h1>
+    <p>Comfortable clothing, grounding homewares, and uplifting accessories inspired by everyday life and personal history.</p>
+    <a class="btn" href="#shop">Shop Necessary Luxuries</a>
+    <a class="btn" href="#inlight" style="background:#334;">Enter InLight Studio</a>
+</div>
+
+<section id="about">
+    <h2>What Necessary Luxuries Means</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">
+    Necessary Luxuries centers on the simple pleasures that make life feel cared for — breathable fabrics, grounding homewares, comfortable clothing, and jewelry that carries memory and meaning.
+    </p>
+</section>
+
+<section id="shop">
+    <h2>Shop Categories</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Apparel</h3>
+            <p>Breathable fabrics and easy silhouettes designed for comfort.</p>
+        </div>
+        <div class="card">
+            <h3>Homewares</h3>
+            <p>Objects that bring calm and beauty into your space.</p>
+        </div>
+        <div class="card">
+            <h3>Accessories & Jewelry</h3>
+            <p>Pieces that uplift and honor personal history.</p>
+        </div>
+        <div class="card">
+            <h3>Translucent Works</h3>
+            <p>Light-filled pieces that shift with movement.</p>
+        </div>
+    </div>
+</section>
+
+<section id="inlight">
+    <h2>InLight — Visual Art</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">
+        InLight explores nature, color, and light through photography, transparency, and slow-motion film.  
+        Simple moments turned luminous.
+    </p>
+    <div class="grid">
+        <div class="card"><h3>Abstract Photography</h3></div>
+        <div class="card"><h3>Backlit Transparency</h3></div>
+        <div class="card"><h3>Pixelation Works</h3></div>
+        <div class="card"><h3>Slow Motion Films</h3></div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p style="text-align:center;">
+        Email: <strong>you@necessarylux.com</strong>
+    </p>
+</section>
+
+<div class="footer">
+    © Necessary Luxuries — Simple pleasures, beautifully made.
+</div>
+
+</body>
+</html>
